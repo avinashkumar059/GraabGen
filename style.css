@@ -188,8 +188,8 @@ header.scrolled {
     position: fixed;
     top: 60px;
     right: -100%;
-    width: 35%;
-    height: 39%;
+    width: 55%;
+    height: 45%;
     background: rgba(5, 5, 16, 0.9);
     backdrop-filter: blur(10px);
     display: flex;
@@ -198,7 +198,7 @@ header.scrolled {
     justify-content: center;
     transition: right 0.4s ease;
     z-index: 99;
-    padding: 25px;
+    padding: 20px;
 }
 
 .mobile-menu.active {
