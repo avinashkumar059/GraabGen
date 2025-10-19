@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GraabGen - Smart Attendance Management</title>
+    <link rel="icon" type="image/x-icon" href="images/logo_a.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background elements -->
+    <div class="bg-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+    <div class="grid-overlay"></div>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="logo">
+            <img src="images/logo_a.png" alt="logo" style="height:50px; width:150px">
+        </div>
+        
+        <nav class="nav-links">
+            <a href="#hero">Home</a>
+            <a href="#service">Services</a>
+            <a href="#choose">Why Choose Us</a>
+            <a href="#about">About Us</a>
+            <a href="#review">Customer Reviews</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        
+        <button class="menu-btn" id="menuBtn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+    
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <nav class="mobile-nav-links">
+            <a href="#hero"><i class="fas fa-home"></i>  Home</a>
+            <a href="#service"><i class="fas fa-cogs"></i> Services</a>
+            <a href="#choose"><i class="fas fa-check-circle"></i> Why Choose Us</a>
+            <a href="#about"><i class="fas fa-user"></i> About Us</a>
+            <a href="#review"><i class="fas fa-star"></i> Customer Reviews</a>
+            <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+        </nav>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h1>Revolutionize Attendance with AI-Powered Face Recognition</h1>
+            <p>GraabGen automates classroom attendance with cutting-edge facial recognition technology, saving time, improving accuracy, and providing valuable insights for educational institutions.</p>
+             <p>Smart attendance management system using facial recognition technology for educational institutions.</p>
+            <div class="cta-buttons">
+                <a href="https://www.notion.so/2918d553593380e4b031e92fc0498f74?pvs=106" class="btn btn-primary"><i class="fas fa-calendar-check"></i>Registration Request</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="image-container">
+                <img src="images/home1.png" alt="GraabGen Attendance System Interface">
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section id="stats" class="stats">
+        <h2 class="section-title">Proven Results</h2>
+        <div class="stats-grid">
+            <div class="stat-item fade-in">
+                <div class="stat-number">98%</div>
+                <div class="stat-label">Accuracy Rate</div>
+            </div>
+            <div class="stat-item fade-in">
+                <div class="stat-number">500+</div>
+                <div class="stat-label">Classes Monitored</div>
+            </div>
+            <div class="stat-item fade-in">
+                <div class="stat-number">85%</div>
+                <div class="stat-label">Time Saved</div>
+            </div>
+            <div class="stat-item fade-in">
+                <div class="stat-number">100%</div>
+                <div class="stat-label">Institutions Satisfied</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="service" class="features">
+        <h2 class="section-title">Our Services</h2>
+        <div class="features-grid">
+            <div class="feature-card" data-service="smart-attendance">
+                <div class="feature-icon">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <h3>Smart Attendance Management System</h3>
+                <p>We develop cutting-edge AI solutions that help businesses automate processes, gain insights, and make data-driven decisions.</p>
+            </div>
+
+            <div class="feature-card" data-service="biometric-attendance">
+                <div class="feature-icon">
+                    <i class="fas fa-fingerprint"></i>
+                </div>
+                <h3>Biometrics Attendance Management System</h3>
+                <p>Our team creates responsive, high-performance web applications using the latest technologies and frameworks.</p>
+            </div>
+
+            <div class="feature-card" data-service="manual-attendance">
+                <div class="feature-icon">
+                    <i class="fas fa-user-check"></i>
+                </div>
+                <h3>Manual Attendance Management System</h3>
+                <p>Turn your data into actionable insights with our advanced analytics and visualization solutions.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal for Service Details -->
+    <div id="serviceModal" class="modal">
+        <div class="modal-content">
+            <button class="close-modal">&times;</button>
+            <div class="modal-header">
+                <div class="modal-icon" id="modalIcon"></div>
+                <h2 id="modalTitle">Service Title</h2>
+            </div>
+            <div class="modal-body" id="modalBody">
+                <!-- Content will be inserted here by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Why choose us Section -->
+    <section id="choose" class="choose">
+        <h2 class="choose-title">Why Choose GraabGen?</h2>
+        <div class="choose-grid">
+            <div class="choose-card">
+                <div class="choose-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3>Advanced Security & Accuracy</h3>
+                <p>Our facial recognition technology ensures 100% accurate attendance tracking with military-grade security protocols.</p>
+                <ul>
+                    <li>Eliminates proxy attendance completely</li>
+                    <li>Bank-level encryption for all data</li>
+                    <li>GDPR and FERPA compliant</li>
+                </ul>
+                <span class="stat-badge">99.8% Accuracy Rate</span>
+            </div>
+
+            <div class="choose-card">
+                <div class="choose-icon">
+                    <i class="fas fa-clock"></i>
+                </div>
+                <h3>Time Efficiency</h3>
+                <p>Transform attendance from a chore into an automated process that takes seconds instead of minutes.</p>
+                <ul>
+                    <li>Reduces attendance time by 90%</li>
+                    <li>No manual record-keeping needed</li>
+                    <li>Instant notifications for absentees</li>
+                </ul>
+                <span class="stat-badge">Saves 15+ hours monthly</span>
+            </div>
+
+            <div class="choose-card">
+                <div class="choose-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h3>Intelligent Analytics</h3>
+                <p>Go beyond basic attendance with powerful analytics that help identify patterns and improve outcomes.</p>
+                <ul>
+                    <li>Predictive absence forecasting</li>
+                    <li>Customizable report generation</li>
+                    <li>Integration with performance data</li>
+                </ul>
+                <span class="stat-badge">20+ Report Types</span>
+            </div>
+
+            <div class="choose-card">
+                <div class="choose-icon">
+                    <i class="fas fa-expand-arrows-alt"></i>
+                </div>
+                <h3>Seamless Scalability</h3>
+                <p>From small classrooms to university campuses with thousands of students, our system grows with you.</p>
+                <ul>
+                    <li>Handles 10 to 10,000+ users effortlessly</li>
+                    <li>Cloud-based infrastructure</li>
+                    <li>Multi-location support</li>
+                </ul>
+                <span class="stat-badge">99.9% Uptime</span>
+            </div>
+
+            <div class="choose-card">
+                <div class="choose-icon">
+                    <i class="fas fa-headset"></i>
+                </div>
+                <h3>Dedicated Support</h3>
+                <p>Our team of experts provides unparalleled support to ensure your success with our platform.</p>
+                <ul>
+                    <li>24/7 technical support</li>
+                    <li>Dedicated account manager</li>
+                    <li>Regular training sessions</li>
+                </ul>
+                <span class="stat-badge">98% Customer Satisfaction</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about">
+        <h2 class="about-title">About GraabGen</h2>
+        
+        <div class="about-content">
+            <div class="about-text">
+                <h3>Revolutionizing Attendance Management with AI</h3>
+                <p>GraabGen was founded in 2023 with a vision to transform traditional attendance systems into intelligent, automated solutions. Our team of experts in artificial intelligence, software development, and education technology came together to create a product that saves time, increases accuracy, and provides valuable insights.</p>
+                <p>Using state-of-the-art face recognition algorithms, our system ensures that attendance is taken in seconds, eliminating manual errors and proxy attendance. We are committed to enhancing the educational experience by allowing teachers to focus on teaching rather than administrative tasks.</p>
+                <p>Our mission is to become the leading provider of smart attendance solutions, empowering educational institutions worldwide with technology that is both innovative and reliable.</p>
+                
+                <div class="about-stats">
+                    <div class="stat-box">
+                        <div class="stat-number">500+</div>
+                        <div class="stat-text">Classes Automated</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">99.7%</div>
+                        <div class="stat-text">Accuracy Rate</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-text">Institutions Served</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">1000+</div>
+                        <div class="stat-text">Hours Saved Monthly</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="GraabGen Face Recognition Technology">
+            </div>
+        </div>
+        
+        <div class="mission-vision">
+            <div class="mission">
+                <h3><i class="fas fa-bullseye"></i> Our Mission</h3>
+                <p>To revolutionize attendance management in educational institutions through cutting-edge AI technology, eliminating manual processes and providing accurate, real-time data to enhance operational efficiency and learning outcomes.</p>
+            </div>
+            
+            <div class="vision">
+                <h3><i class="fas fa-eye"></i> Our Vision</h3>
+                <p>To become the global standard for smart attendance systems, transforming how educational institutions manage student presence and engagement through innovative, reliable, and accessible technology solutions.</p>
+            </div>
+        </div>
+        
+        <div class="timeline-section">
+            <h3 class="timeline-title">Our Journey</h3>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">January 2023</div>
+                        <h4>Company Founded</h4>
+                        <p>GraabGen was established with a vision to transform attendance management in educational institutions.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">April 2023</div>
+                        <h4>First Prototype</h4>
+                        <p>Developed our first working prototype with basic face recognition capabilities.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">August 2023</div>
+                        <h4>Pilot Program</h4>
+                        <p>Launched pilot programs in 5 educational institutions with great success.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">December 2023</div>
+                        <h4>Version 2.0 Release</h4>
+                        <p>Released our enhanced system with improved accuracy and additional features.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">Present</div>
+                        <h4>Expanding Reach</h4>
+                        <p>Currently serving 50+ institutions and continuously improving our technology.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="technology">
+            <h3 class="tech-title">Our Technology</h3>
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h4>AI-Powered Recognition</h4>
+                    <p>Our advanced algorithms accurately identify students even in challenging lighting conditions and with partial face visibility.</p>
+                </div>
+                
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h4>Secure Cloud Storage</h4>
+                    <p>All attendance data is securely stored in the cloud with encryption and regular backups to ensure data integrity.</p>
+                </div>
+                
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h4>Real-Time Analytics</h4>
+                    <p>Generate comprehensive reports and analytics to track attendance patterns and identify areas for improvement.</p>
+                </div>
+                
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h4>Mobile Integration</h4>
+                    <p>Access the system from any device with our responsive web application designed for both desktop and mobile use.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Reviews Section -->
+    <section id="review" class="reviews">
+        <div class="review-header">
+            <h2 class="section-title">Customer Reviews</h2>
+            <p>Share your experience and see what others are saying about GraabGen</p>
+        </div>
+
+        <div class="review-stats">
+            <div class="stat-item">
+                <div class="stat-value" id="averageRating">4.8</div>
+                <div class="stat-label">Average Rating</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value" id="totalReviews">42</div>
+                <div class="stat-label">Total Reviews</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value">96%</div>
+                <div class="stat-label">Would Recommend</div>
+            </div>
+        </div>
+
+        <div class="reviews-container">
+            <div class="review-form">
+                <h3>Share Your Experience</h3>
+                <form id="reviewForm">
+                    <div class="form-group">
+                        <label for="reviewerName">Your Name</label>
+                        <input type="text" id="reviewerName" placeholder="Enter your name" required>
+                    </div>
+                    
+                    <div class="rating-container">
+                        <span class="rating-label">Your Rating</span>
+                        <div class="rating">
+                            <input type="radio" id="star5" name="rating" value="5" required>
+                            <label for="star5">★</label>
+                            <input type="radio" id="star4" name="rating" value="4">
+                            <label for="star4">★</label>
+                            <input type="radio" id="star3" name="rating" value="3">
+                            <label for="star3">★</label>
+                            <input type="radio" id="star2" name="rating" value="2">
+                            <label for="star2">★</label>
+                            <input type="radio" id="star1" name="rating" value="1">
+                            <label for="star1">★</label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="reviewText">Your Review</label>
+                        <textarea id="reviewText" placeholder="Share your experience with us..." required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="review-submit-btn">Submit Review</button>
+                </form>
+            </div>
+            
+            <div class="reviews-display">
+                <h3>What Our Customers Say</h3>
+                <div id="reviewsList">
+                    <!-- Reviews will be dynamically inserted here -->
+                    <div class="no-reviews">No reviews yet. Be the first to share your experience!</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Build the Future Together</h3>
+                    <p>Have a project in mind or want to learn more about our services? Reach out to us and our team will get back to you as soon as possible.</p>
+                    
+                    <ul class="contact-details">
+                        <li>
+                            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div>Locations : 123 Innovation Drive, Tech City, TC 10101</div>
+                        </li>
+                        <li>
+                            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                            <div>+1 (555) 123-4567</div>
+                        </li>
+                        <li>
+                            <div class="contact-icon"><i class="fa fa-whatsapp" aria-hidden="true"></i></div>
+                            <div>+1 (555) 123-4567</div>
+                        </li>
+                        <li>
+                            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                            <div>info@GraabGen.com</div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" placeholder="Your Name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="Your Email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" placeholder="Your Message" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+        </div>
+        <p class="copyright">© 2025 GraabGen. All rights reserved.</p>
+    </footer>
+
+    <div class="success-message" id="successMessage">
+        Thank you for your review!
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
