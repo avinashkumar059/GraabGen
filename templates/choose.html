@@ -1,0 +1,183 @@
+{% extends "index.html" %}
+{% load static %}
+
+{% block choose %}
+
+    <!-- Why choose us Section -->
+    <section id="choose" class="choose">
+        <h2 class="choose-title">Why Choose GraabGen?</h2>
+        <div class="choose-grid">
+            <div class="choose-card">
+                <div class="choose-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3>Advanced Security & Accuracy</h3>
+                <p>Our facial recognition technology ensures 100% accurate attendance tracking with military-grade security protocols.</p>
+                <ul>
+                    <li>Eliminates proxy attendance completely</li>
+                    <li>Bank-level encryption for all data</li>
+                    <li>GDPR and FERPA compliant</li>
+                </ul>
+                <span class="stat-badge">99.8% Accuracy Rate</span>
+            </div>
+
+            <div class="choose-card">
+                <div class="choose-icon">
+                    <i class="fas fa-clock"></i>
+                </div>
+                <h3>Time Efficiency</h3>
+                <p>Transform attendance from a chore into an automated process that takes seconds instead of minutes.</p>
+                <ul>
+                    <li>Reduces attendance time by 90%</li>
+                    <li>No manual record-keeping needed</li>
+                    <li>Instant notifications for absentees</li>
+                </ul>
+                <span class="stat-badge">Saves 15+ hours monthly</span>
+            </div>
+
+            <div class="choose-card">
+                <div class="choose-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h3>Intelligent Analytics</h3>
+                <p>Go beyond basic attendance with powerful analytics that help identify patterns and improve outcomes.</p>
+                <ul>
+                    <li>Predictive absence forecasting</li>
+                    <li>Customizable report generation</li>
+                    <li>Integration with performance data</li>
+                </ul>
+                <span class="stat-badge">20+ Report Types</span>
+            </div>
+
+            <div class="choose-card">
+                <div class="choose-icon">
+                    <i class="fas fa-expand-arrows-alt"></i>
+                </div>
+                <h3>Seamless Scalability</h3>
+                <p>From small classrooms to university campuses with thousands of students, our system grows with you.</p>
+                <ul>
+                    <li>Handles 10 to 10,000+ users effortlessly</li>
+                    <li>Cloud-based infrastructure</li>
+                    <li>Multi-location support</li>
+                </ul>
+                <span class="stat-badge">99.9% Uptime</span>
+            </div>
+
+            <div class="choose-card">
+                <div class="choose-icon">
+                    <i class="fas fa-headset"></i>
+                </div>
+                <h3>Dedicated Support</h3>
+                <p>Our team of experts provides unparalleled support to ensure your success with our platform.</p>
+                <ul>
+                    <li>24/7 technical support</li>
+                    <li>Dedicated account manager</li>
+                    <li>Regular training sessions</li>
+                </ul>
+                <span class="stat-badge">98% Customer Satisfaction</span>
+            </div>
+        </div>
+    </section>
+
+     <!-- Features Section -->
+    <section id="service" class="features">
+        <h2 class="section-title">Our Services</h2>
+        <div class="features-grid">
+            <div class="feature-card" data-service="smart-attendance">
+                <div class="feature-icon">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <h3>Smart Attendance Management System</h3>
+                <p>We develop cutting-edge AI solutions that help businesses automate processes, gain insights, and make data-driven decisions.</p>
+            </div>
+
+            <div class="feature-card" data-service="biometric-attendance">
+                <div class="feature-icon">
+                    <i class="fas fa-fingerprint"></i>
+                </div>
+                <h3>Biometrics Attendance Management System</h3>
+                <p>Our team creates responsive, high-performance web applications using the latest technologies and frameworks.</p>
+            </div>
+
+            <div class="feature-card" data-service="manual-attendance">
+                <div class="feature-icon">
+                    <i class="fas fa-user-check"></i>
+                </div>
+                <h3>Manual Attendance Management System</h3>
+                <p>Turn your data into actionable insights with our advanced analytics and visualization solutions.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal for Service Details -->
+    <div id="serviceModal" class="modal">
+        <div class="modal-content">
+            <button class="close-modal">&times;</button>
+            <div class="modal-header">
+                <div class="modal-icon" id="modalIcon"></div>
+                <h2 id="modalTitle">Service Title</h2>
+            </div>
+            <div class="modal-body" id="modalBody">
+                <!-- Content will be inserted here by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Comparison Section -->
+    <section class="comparison">
+        <h2 class="choose-title">GraabGen vs Traditional Methods</h2>
+        <table class="comparison-table">
+            <tr>
+                <th>Feature</th>
+                <th>GraabGen</th>
+                <th>Others</th>
+            </tr>
+            <tr>
+                <td>Accuracy</td>
+                <td class="check-mark">99.8%</td>
+                <td class="cross-mark">~85%</td>
+            </tr>
+            <tr>
+                <td>Time per Class</td>
+                <td class="check-mark">10-20 seconds</td>
+                <td class="cross-mark">3-5 minutes</td>
+            </tr>
+            <tr>
+                <td>Proxy Prevention</td>
+                <td class="check-mark">Yes</td>
+                <td class="cross-mark">No</td>
+                
+            </tr>
+            <tr>
+                <td>Data Analytics</td>
+                <td class="check-mark">Advanced</td>
+                <td class="cross-mark">None</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <h2 class="choose-title">GraabGen in Numbers</h2>
+        <div class="stats-grid">
+            <div class="stat-item">
+                <div class="stat-number">50+</div>
+                <div class="stat-label">Institutions</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">95%</div>
+                <div class="stat-label">Customer Satisfaction</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">2K+</div>
+                <div class="stat-label">Recognitions Daily</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">99.9%</div>
+                <div class="stat-label">Uptime</div>
+            </div>
+        </div>
+    </section>
+
+
+{% endblock choose %}

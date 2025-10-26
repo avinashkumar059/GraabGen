@@ -1,0 +1,196 @@
+{% extends "index.html" %}
+{% load static %}
+{% block title %}Home{% endblock title %}
+
+
+{% block home %}
+<!-- Background elements -->
+    <div class="bg-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+    <div class="grid-overlay"></div>
+
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Revolutionize Attendance with AI-Powered Face Recognition</h1>
+            <p>GraabGen automates classroom attendance with cutting-edge facial recognition technology, saving time, improving accuracy, and providing valuable insights for educational institutions.</p>
+            <p>Smart attendance management system using facial recognition technology for educational institutions.</p>
+            
+            <div class="cta-buttons">
+            <button id="registrationBtn" class="btn btn-primary"><i class="fas fa-calendar-check"></i>Registration Request</button>
+        </div>
+            
+
+        </div>
+        <div class="hero-image">
+            <div class="image-container">
+                <img src="{% static 'images/home.png' %}" alt="GraabGen Attendance System Interface">
+            </div>
+        </div>
+    </section>
+
+<!-- Registration Form Modal -->
+<div id="registrationModal" class="modal">
+    <div class="modal-content registration-modal">
+        <button class="close-modal">&times;</button>
+        <div class="modal-header">
+            <h2>Registration Request</h2>
+            <p>Fill out the form below to request access to GraabGen</p>
+        </div>
+        <div class="modal-body">
+            <div class="form-container">
+                <!-- Browser-specific iframe attributes for cross-browser compatibility -->
+                <iframe 
+                    src="https://docs.google.com/forms/d/e/1FAIpQLScFnn_Sarmpj-KVGmObiErjoHHcS5M40cxVyRj2SuhuuOub7w/viewform?embedded=true" 
+                    width="100%" 
+                    height="600" 
+                    frameborder="0" 
+                    marginheight="0" 
+                    marginwidth="0"
+                    id="googleFormFrame"
+                    scrolling="yes"
+                    allow="autoplay; encrypted-media"
+                    allowfullscreen>
+                    Loading…
+                </iframe>
+                <div class="form-fallback" id="formFallback">
+                    <div class="fallback-content">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <h3>Form Not Loading?</h3>
+                        <p>If the registration form is not displaying properly in your browser, you can open it directly in Google Forms.</p>
+                        <div class="fallback-buttons">
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLScFnn_Sarmpj-KVGmObiErjoHHcS5M40cxVyRj2SuhuuOub7w/viewform" 
+                               target="_blank" 
+                               class="btn btn-primary">
+                                Open Form in New Tab
+                            </a>
+                            <button id="retryForm" class="btn btn-secondary">
+                                <i class="fas fa-redo"></i> Try Again
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!-- Stats Section -->
+    <section id="stats" class="stats">
+        <h2 class="section-title">Proven Results</h2>
+        <div class="stats-grid">
+            <div class="stat-item fade-in">
+                <div class="stat-number">98%</div>
+                <div class="stat-label">Accuracy Rate</div>
+            </div>
+            <div class="stat-item fade-in">
+                <div class="stat-number">500+</div>
+                <div class="stat-label">Classes Monitored</div>
+            </div>
+            <div class="stat-item fade-in">
+                <div class="stat-number">85%</div>
+                <div class="stat-label">Time Saved</div>
+            </div>
+            <div class="stat-item fade-in">
+                <div class="stat-number">100%</div>
+                <div class="stat-label">Institutions Satisfied</div>
+            </div>
+        </div>
+    </section>
+
+       <!-- Features Section -->
+    <section id="service" class="features">
+        <h2 class="section-title">Our Services</h2>
+        <div class="features-grid">
+            <div class="feature-card" data-service="smart-attendance">
+                <div class="feature-icon">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <h3>Smart Attendance Management System</h3>
+                <p>We develop cutting-edge AI solutions that help businesses automate processes, gain insights, and make data-driven decisions.</p>
+            </div>
+
+            <div class="feature-card" data-service="biometric-attendance">
+                <div class="feature-icon">
+                    <i class="fas fa-fingerprint"></i>
+                </div>
+                <h3>Biometrics Attendance Management System</h3>
+                <p>Our team creates responsive, high-performance web applications using the latest technologies and frameworks.</p>
+            </div>
+
+            <div class="feature-card" data-service="manual-attendance">
+                <div class="feature-icon">
+                    <i class="fas fa-user-check"></i>
+                </div>
+                <h3>Manual Attendance Management System</h3>
+                <p>Turn your data into actionable insights with our advanced analytics and visualization solutions.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal for Service Details -->
+    <div id="serviceModal" class="modal">
+        <div class="modal-content">
+            <button class="close-modal">&times;</button>
+            <div class="modal-header">
+                <div class="modal-icon" id="modalIcon"></div>
+                <h2 id="modalTitle">Service Title</h2>
+            </div>
+            <div class="modal-body" id="modalBody">
+                <!-- Content will be inserted here by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+     <!-- Comparison Section -->
+    <section class="comparison">
+        <h2 class="choose-title">GraabGen vs Traditional Methods</h2>
+        <table class="comparison-table">
+            <tr>
+                <th>Feature</th>
+                <th>GraabGen</th>
+                <th>Others</th>
+            </tr>
+            <tr>
+                <td>Accuracy</td>
+                <td class="check-mark">99.8%</td>
+                <td class="cross-mark">~85%</td>
+            </tr>
+            <tr>
+                <td>Time per Class</td>
+                <td class="check-mark">10-20 seconds</td>
+                <td class="cross-mark">3-5 minutes</td>
+            </tr>
+            <tr>
+                <td>Proxy Prevention</td>
+                <td class="check-mark">Yes</td>
+                <td class="cross-mark">No</td>
+                
+            </tr>
+            <tr>
+                <td>Data Analytics</td>
+                <td class="check-mark">Advanced</td>
+                <td class="cross-mark">None</td>
+            </tr>
+        </table>
+    </section>
+
+        <!-- Footer -->
+    <footer>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+        </div>
+        <p class="copyright">© 2025 GraabGen. All rights reserved.</p>
+    </footer>
+
+    {% block team %}{% endblock team %}
+{% endblock home %}

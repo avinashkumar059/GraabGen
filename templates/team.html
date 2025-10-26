@@ -1,0 +1,106 @@
+{% include "index.html" %}
+{% load static %}
+{% block title %}Team{% endblock title %}
+
+{% block team %}
+    <!-- Team Section -->
+    <section id="team" class="team">
+        <h2 class="team-title">Meet Our Team</h2>
+        <div class="team-grid">
+            <div class="team-member">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&q=80" alt="Avinash Kumar Raut" class="team-img">
+                <h3>Avinash Kumar Raut</h3>
+                <p class="team-position">Founder</p>
+                <p>Visionary leader with 10+ years in tech innovation</p>
+                <div class="team-social">
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            
+            <div class="team-member">
+                <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&q=80" alt="Manish Rajbanshi" class="team-img">
+                <h3>Manish Rajbanshi</h3>
+                <p class="team-position">Founder</p>
+                <p>AI and machine learning expert with PhD in Computer Science</p>
+                <div class="team-social">
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            
+            <div class="team-member">
+                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&q=80" alt="Michael Chen" class="team-img">
+                <h3>Michael Chen</h3>
+                <p class="team-position">Lead Developer</p>
+                <p>Full-stack developer specializing in face recognition technology</p>
+                <div class="team-social">
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            
+            <div class="team-member">
+                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&q=80" alt="Emily Rodriguez" class="team-img">
+                <h3>Emily Rodriguez</h3>
+                <p class="team-position">UI/UX Designer</p>
+                <p>Creative designer focused on creating intuitive user experiences</p>
+                <div class="team-social">
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-behance"></i></a>
+                    <a href="#"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+
+            <div class="team-member">
+                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&q=80" alt="David Johnson" class="team-img">
+                <h3>David Johnson</h3>
+                <p class="team-position">Product Manager</p>
+                <p>Expert in product strategy and user-centered design</p>
+                <div class="team-social">
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+
+            <div class="team-member">
+                <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&q=80" alt="Sarah Williams" class="team-img">
+                <h3>Sarah Williams</h3>
+                <p class="team-position">Data Scientist</p>
+                <p>Specializes in machine learning algorithms and data visualization</p>
+                <div class="team-social">
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="swipe-indicators">
+            <div class="swipe-dot active" data-index="0"></div>
+            <div class="swipe-dot" data-index="1"></div>
+            <div class="swipe-dot" data-index="2"></div>
+            <div class="swipe-dot" data-index="3"></div>
+            <div class="swipe-dot" data-index="4"></div>
+            <div class="swipe-dot" data-index="5"></div>
+        </div>
+        
+        <div class="nav-arrows">
+            <div class="nav-arrow prev">
+                <i class="fas fa-chevron-left"></i>
+            </div>
+            <div class="nav-arrow next">
+                <i class="fas fa-chevron-right"></i>
+            </div>
+        </div>
+        
+        <!-- <div class="swipe-hint">
+            <i class="fas fa-chevron-left"></i> Swipe to explore <i class="fas fa-chevron-right"></i>
+        </div> -->
+    </section>
+
+{% endblock team %}

@@ -1,0 +1,138 @@
+{% include "index.html" %}
+{% load static %}
+{% block title %}About Us{% endblock title %}
+
+{% block about %}
+    <!-- About Us Section -->
+    <section id="about" class="about">
+        <h2 class="about-title">About GraabGen</h2>
+        
+        <div class="about-content">
+            
+            <div class="about-image">
+                <img src="{% static 'images/about.png' %}" alt="GraabGen Face Recognition Technology">
+            </div>
+            <div class="about-text">
+                <h3>Revolutionizing Attendance Management with AI</h3>
+                <p>GraabGen was founded in 2023 with a vision to transform traditional attendance systems into intelligent, automated solutions. Our team of experts in artificial intelligence, software development, and education technology came together to create a product that saves time, increases accuracy, and provides valuable insights.</p>
+                <p>Using state-of-the-art face recognition algorithms, our system ensures that attendance is taken in seconds, eliminating manual errors and proxy attendance. We are committed to enhancing the educational experience by allowing teachers to focus on teaching rather than administrative tasks.</p>
+                <p>Our mission is to become the leading provider of smart attendance solutions, empowering educational institutions worldwide with technology that is both innovative and reliable.</p>
+                
+            </div>
+            <!-- <div class="about-image">
+                <img src="{% static 'images/about.png' %}" alt="GraabGen Face Recognition Technology">
+            </div> -->
+        </div>
+        
+        <div class="about-stats">
+                    <div class="stat-box">
+                        <div class="stat-number">500+</div>
+                        <div class="stat-text">Classes Automated</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">99.7%</div>
+                        <div class="stat-text">Accuracy Rate</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-text">Institutions Served</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">1000+</div>
+                        <div class="stat-text">Hours Saved Monthly</div>
+                    </div>
+                </div>
+
+        <div class="mission-vision">
+            <div class="mission">
+                <h3><i class="fas fa-bullseye"></i> Our Mission</h3>
+                <p>Our mission is to build simple and effective AI-based systems that help businesses and institutions save time and work more efficiently. We focus on innovation, learning, and teamwork to develop real solutions that make a positive impact in the world.</p>
+            </div>
+            
+            <div class="vision">
+                <h3><i class="fas fa-eye"></i> Our Vision</h3>
+                <p>GrabGen aims to make technology smarter and more helpful for School/Collage. We want to create AI and computer vision tools that make everyday tasks easier, faster, and more secure for everyone.</p>
+            </div>
+        </div>
+        
+        <div class="timeline-section">
+            <h3 class="timeline-title">Our Journey</h3>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">January 2026</div>
+                        <h4>Company Founded</h4>
+                        <p>GrabGen will be officially started with a vision to bring smart AI and face recognition solutions for educational institutions.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">April 2026</div>
+                        <h4>Product Launch</h4>
+                        <p>We will launch our first working product focused on AI-powered attendance management and start initial operations.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">May 2026</div>
+                        <h4>Company Registration</h4>
+                        <p>GrabGen will be officially registered as a tech company, expanding its focus on AI, computer vision, and automation projects.</p>
+                    </div>
+                </div>
+                <!-- <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">December 2023</div>
+                        <h4>Version 2.0 Release</h4>
+                        <p>Released our enhanced system with improved accuracy and additional features.</p>
+                    </div>
+                </div> -->
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">Present</div>
+                        <h4>Future Goal</h4>
+                        <p>Grow GrabGen into a leading AI-based company serving institutions across India, continuously improving our technology.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="technology">
+            <h3 class="tech-title">Our Technology</h3>
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h4>AI-Powered Recognition</h4>
+                    <p>GrabGen’s intelligent face recognition system accurately identifies students even in difficult lighting or crowded environments, ensuring reliable attendance tracking every time.</p>
+                </div>
+                
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h4>Secure Cloud Storage</h4>
+                    <p>All attendance records are safely stored in the cloud with encryption and regular backups, keeping every institution’s data protected and accessible anytime.</p>
+                </div>
+                
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h4>Real-Time Analytics</h4>
+                    <p>Our system provides instant insights and detailed reports, helping schools and colleges analyze attendance trends and improve management efficiency.</p>
+                </div>
+                
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h4>Mobile Integration</h4>
+                    <p>Access GrabGen’s platform from any device through our responsive web app — designed to work seamlessly on both mobile and desktop for easy, on-the-go management.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock about %}
